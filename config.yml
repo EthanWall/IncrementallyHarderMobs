@@ -1,0 +1,13 @@
+mobs:
+  SKELETON:
+    1:
+      equipment:
+        head:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_HELMET
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
