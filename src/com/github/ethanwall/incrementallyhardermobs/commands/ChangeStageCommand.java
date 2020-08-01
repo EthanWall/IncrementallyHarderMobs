@@ -1,5 +1,6 @@
 package com.github.ethanwall.incrementallyhardermobs.commands;
 
+import com.github.ethanwall.incrementallyhardermobs.IncrementallyHarderMobs;
 import com.github.ethanwall.incrementallyhardermobs.MobDifficultyHandler;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -20,6 +21,7 @@ public class ChangeStageCommand implements CommandExecutor {
 
         MobDifficultyHandler.stage = Integer.parseInt(args[0]);
         MobDifficultyHandler.refreshDifficultMobs();
+        IncrementallyHarderMobs.scoreboard.updateScoreboard();
 
         sender.sendMessage(String.format("The difficulty stage has been updated to %s%d%s.",
                 ChatColor.BLUE,

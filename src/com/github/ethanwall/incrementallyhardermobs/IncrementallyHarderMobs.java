@@ -10,6 +10,7 @@ public class IncrementallyHarderMobs extends JavaPlugin {
 
     public static FileConfiguration config;
     public static boolean debug;
+    public static StageScoreboard scoreboard;
 
     private PluginDescriptionFile pdf;
 
@@ -22,7 +23,10 @@ public class IncrementallyHarderMobs extends JavaPlugin {
 
         debug = config.getBoolean("debug");
 
+        scoreboard = new StageScoreboard();
+
         getServer().getPluginManager().registerEvents(new EntitySpawnListener(), this);
+        getServer().getPluginManager().registerEvents(scoreboard, this);
 
         getCommand("setstage").setExecutor(new ChangeStageCommand());
 
@@ -30,6 +34,7 @@ public class IncrementallyHarderMobs extends JavaPlugin {
         getServer().getScheduler().runTaskTimer(this, () -> {
             MobDifficultyHandler.stage++;
             MobDifficultyHandler.refreshDifficultMobs();
+            scoreboard.updateScoreboard();
         }, taskInterval, taskInterval);
 
         getLogger().info(pdf.getFullName() + " has been enabled!");

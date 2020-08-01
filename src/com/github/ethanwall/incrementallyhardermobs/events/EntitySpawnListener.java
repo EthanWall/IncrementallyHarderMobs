@@ -9,7 +9,7 @@ import org.bukkit.event.entity.EntitySpawnEvent;
 public class EntitySpawnListener implements Listener {
 
     @EventHandler
-    public void OnEntitySpawned(EntitySpawnEvent event) {
+    public void onEntitySpawned(EntitySpawnEvent event) {
         if (event.getEntity() instanceof LivingEntity) {
             LivingEntity entity = (LivingEntity) event.getEntity();
             MobDifficultyHandler.createDifficultMob(entity);
