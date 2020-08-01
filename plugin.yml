@@ -1,0 +1,10 @@
+name: IncrementallyHarderMobs
+version: 1.0
+api-version: 1.16
+description: A plugin which incrementally increases the difficulty of mobs in stages.
+author: Ethan Wall
+main: com.github.ethanwall.incrementallyhardermobs.IncrementallyHarderMobs
+commands:
+  setstage:
+    description: Sets the stage of mob difficulty.
+    usage: /<command> <stage>

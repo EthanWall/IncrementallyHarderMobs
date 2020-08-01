@@ -1,3 +1,4 @@
+interval: 3600
 mobs:
   SKELETON:
     1:
@@ -11,3 +12,15 @@ mobs:
             meta-type: UNSPECIFIC
             enchants:
               PROTECTION_ENVIRONMENTAL: 1
+        main:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOW
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              ARROW_DAMAGE: 1
+      effects:
+        SPEED: 1
+debug: true
