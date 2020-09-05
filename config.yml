@@ -1,5 +1,6 @@
 interval: 3600
 scoreboard-title: §6Sub to Vexiluzz!
+creeper-charged-level: 4
 mobs:
   SKELETON:
     1:
@@ -7,6 +8,33 @@ mobs:
         head:
           ==: org.bukkit.inventory.ItemStack
           type: LEATHER_HELMET
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        chest:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        legs:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_LEGGINGS
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        feet:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_BOOTS
           amount: 1
           meta:
             ==: ItemMeta
@@ -24,4 +52,347 @@ mobs:
               ARROW_DAMAGE: 1
       effects:
         SPEED: 1
-debug: true
+    2:
+      equipment:
+        head:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_HELMET
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        chest:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_CHESTPLATE
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 2
+        legs:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_LEGGINGS
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        feet:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_BOOTS
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        main:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOW
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              ARROW_DAMAGE: 1
+      effects:
+        SPEED: 1
+    3:
+      equipment:
+        head:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_HELMET
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        chest:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_CHESTPLATE
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 2
+        legs:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_LEGGINGS
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        feet:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_BOOTS
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        main:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOW
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              ARROW_DAMAGE: 2
+      effects:
+        SPEED: 1
+    4:
+      equipment:
+        head:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_HELMET
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        chest:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_CHESTPLATE
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 2
+        legs:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_LEGGINGS
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        feet:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_BOOTS
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        main:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOW
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              ARROW_DAMAGE: 2
+      effects:
+        SPEED: 1
+  ZOMBIE:
+    1:
+      equipment:
+        head:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_HELMET
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        chest:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        legs:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_LEGGINGS
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        feet:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_BOOTS
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        main:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOW
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              ARROW_DAMAGE: 1
+      effects:
+        SPEED: 1
+    2:
+      equipment:
+        head:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_HELMET
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        chest:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_CHESTPLATE
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 2
+        legs:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_LEGGINGS
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        feet:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_BOOTS
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        main:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOW
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              ARROW_DAMAGE: 1
+      effects:
+        SPEED: 1
+    3:
+      equipment:
+        head:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_HELMET
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        chest:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_CHESTPLATE
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 2
+        legs:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_LEGGINGS
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        feet:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_BOOTS
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        main:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOW
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              ARROW_DAMAGE: 2
+      effects:
+        SPEED: 1
+    4:
+      equipment:
+        head:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_HELMET
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        chest:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_CHESTPLATE
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 2
+        legs:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_LEGGINGS
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        feet:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_BOOTS
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 1
+        main:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOW
+          amount: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              ARROW_DAMAGE: 2
+      effects:
+        SPEED: 1

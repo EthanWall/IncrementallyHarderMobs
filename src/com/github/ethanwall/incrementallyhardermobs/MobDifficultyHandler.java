@@ -1,7 +1,6 @@
 package com.github.ethanwall.incrementallyhardermobs;
 
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.World;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.EntityType;
@@ -29,31 +28,12 @@ public class MobDifficultyHandler {
             entity.getEquipment().setArmorContents(armor);
             entity.getEquipment().setItemInMainHand(equipmentSection.getItemStack("main"));
             entity.getEquipment().setItemInOffHand(equipmentSection.getItemStack("secondary"));
-
-            if (IncrementallyHarderMobs.debug) {
-                if (equipmentSection.getItemStack("main") != null)
-                    Bukkit.getLogger().info("Main Hand: " + equipmentSection.getItemStack("main").getType());
-                if (equipmentSection.getItemStack("secondary") != null)
-                    Bukkit.getLogger().info("Secondary: " + equipmentSection.getItemStack("secondary").getType());
-                if (equipmentSection.getItemStack("head") != null)
-                    Bukkit.getLogger().info("Head: " + equipmentSection.getItemStack("head").getType());
-                if (equipmentSection.getItemStack("body") != null)
-                    Bukkit.getLogger().info("Body: " + equipmentSection.getItemStack("body").getType());
-                if (equipmentSection.getItemStack("legs") != null)
-                    Bukkit.getLogger().info("Legs: " + equipmentSection.getItemStack("legs").getType());
-                if (equipmentSection.getItemStack("feet") != null)
-                    Bukkit.getLogger().info("Feet: " + equipmentSection.getItemStack("feet").getType());
-            }
         }
 
         ConfigurationSection effectsSection = section.getConfigurationSection("effects");
         if (effectsSection != null) {
             for (String key : effectsSection.getKeys(false)) {
                 entity.addPotionEffect(new PotionEffect(PotionEffectType.getByName(key), Integer.MAX_VALUE, effectsSection.getInt(key)));
-
-                if (IncrementallyHarderMobs.debug) {
-                    Bukkit.getLogger().info(String.format("Effect %s (%dx) has been added.", key, effectsSection.getInt(key)));
-                }
             }
         }
     }

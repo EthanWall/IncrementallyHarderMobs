@@ -10,6 +10,7 @@ public class EntitySpawnListener implements Listener {
 
     @EventHandler
     public void onEntitySpawned(EntitySpawnEvent event) {
+        // Create difficult entity
         if (event.getEntity() instanceof LivingEntity) {
             LivingEntity entity = (LivingEntity) event.getEntity();
             MobDifficultyHandler.createDifficultMob(entity);
