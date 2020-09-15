@@ -3,6 +3,7 @@ package com.github.ethanwall.incrementallyhardermobs;
 import com.github.ethanwall.incrementallyhardermobs.commands.ChangeStageCommand;
 import com.github.ethanwall.incrementallyhardermobs.events.CreeperCharger;
 import com.github.ethanwall.incrementallyhardermobs.events.EntitySpawnListener;
+import com.github.ethanwall.incrementallyhardermobs.events.PassiveMobChanger;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -25,6 +26,7 @@ public class IncrementallyHarderMobs extends JavaPlugin {
 
         getServer().getPluginManager().registerEvents(new EntitySpawnListener(), this);
         getServer().getPluginManager().registerEvents(new CreeperCharger(), this);
+        getServer().getPluginManager().registerEvents(new PassiveMobChanger(), this);
         getServer().getPluginManager().registerEvents(scoreboard, this);
 
         getCommand("setstage").setExecutor(new ChangeStageCommand());

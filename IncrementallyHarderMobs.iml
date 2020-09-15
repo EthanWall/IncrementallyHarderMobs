@@ -10,7 +10,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Desktop/Minecraft Dev/Minecraft Plugins/Dependencies/spigot-api-1.16.1-R0.1-20200729.094619-130.jar!/" />
+          <root url="jar://$USER_HOME$/Desktop/Minecraft Dev/Minecraft Plugins/Dependencies/spigot-api-1.16.2-R0.1-SNAPSHOT.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
